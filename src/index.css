@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@import "./css/fonts.css";
+
+@layer base {
+
+    html,
+    body,
+    #root {
+        min-height: 100%;
+    }
+
+    body {
+        @apply bg-[#efeff2] bg-no-repeat;
+        background-image: url('/up.png');
+        background-size: 100% auto;
+        background-position: center -41px;
+    }
+
+    @media (min-width:768px) {
+        body {
+            background-position: center -70px;
+        }
+    }
+
+   @media (min-width:1278px) {
+        body {
+            background-position: center -100px;
+        }
+    }
+
+    @media (min-width:1920px) {
+        body {
+            background-position: center -170px;
+        }
+    }
+}
