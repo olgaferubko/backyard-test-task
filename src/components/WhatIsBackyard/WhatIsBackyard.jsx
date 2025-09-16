@@ -44,8 +44,8 @@ export default function WhatIsBackyard() {
       <h2
         className="
           font-['Archivo'] font-bold leading-[1.1] text-[#303030]
-          text-[28px] md:text-[42px] xl:text-[48px]
-          mb-[24px] md:mb-[36px]
+          text-[28px] md:text-[42px] xl:text-[42px] [@media(min-width:1920px)]:text-[48px]
+          mb-[24px] md:mb-[36px] 
         "
       >
         What is Backyard?
@@ -166,7 +166,7 @@ function Capsule({ n, title, className = "", gapClass = "gap-[34px]" }) {
     <div
       className={
         `
-        mx-auto md:mx-0
+        mx-auto md:mx-0 
         rounded-[45px] bg-[#f4f6f7] backdrop-blur-[4px]
         px-[13px]
         flex items-center
@@ -190,14 +190,14 @@ function TextCard({ title, text, className = "" }) {
       className={
         `
         rounded-[31px] bg-[#f4f6f7]
-        p-[30px] md:p-[30px_17px]
+        p-[30px] md:p-[30px_17px] xl:h-[168px]
         ` + className
       }
     >
-      <h3 className="font-['Archivo'] font-extrabold text-[#2d322f] text-[18px] xl:text-[20px]">
+      <h3 className="font-['Archivo'] font-extrabold text-[#2d322f] text-[18px] [@media(min-width:1920px)]:text-[20px] xl:text-[20px]">
         {title}
       </h3>
-      <p className="mt-[11px] font-[Gilroy] font-normal text-[14px] text-[#787878]">
+      <p className="mt-[11px] font-[Gilroy] font-normal text-[14px] text-[#787878] [@media(min-width:1920px)]:text-[16px]">
         {text}
       </p>
     </div>

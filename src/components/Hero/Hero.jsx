@@ -12,7 +12,7 @@ export default function Hero() {
             <h1
             className="
                 font-['Archivo'] font-semibold text-[#303030] leading-[1.1]
-                text-[48px] md:text-[58px] xl:text-[72px] min-[1920px]:text-[90px]
+                text-[48px] md:text-[58px] xl:text-[72px] [@media(min-width:1920px)]:text-[90px]
             "
             >
               The yield-backed<br />
@@ -33,15 +33,23 @@ export default function Hero() {
             className="
                 mt-[14px] md:mt-4
                 font-[Gilroy] font-normal text-[rgba(38,38,38,0.55)]
-                text-[20px] md:text-[16px] xl:text-[24px]
+                text-[20px] md:text-[16px] xl:text-[20px] [@media(min-width:1920px)]:text-[24px]
             "
             >
             Keep your yield working for you — we keep your liquidity accessible
             </p>
 
-    
-            <div className="mt-8 flex flex-wrap items-center gap-[8px] md:gap-[21px]">
-    
+  
+            <div
+              className="
+                mt-[38px]          
+                md:mt-[33px]     
+                xl:mt-[70px]        
+                [@media(min-width:1920px)]:mt-[79px]
+                flex flex-wrap items-center
+                gap-[8px] md:gap-[21px]
+              "
+            >
               <a
                 href="#whitelist"
                 className="

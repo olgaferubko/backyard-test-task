@@ -46,7 +46,7 @@ export default function Header({
               draggable="false"
               className="w-[20px] h-[21px] md:w-[25px] md:h-[26px]"
             />
-            <span className="text-[16px] font-normal text-[rgba(51,51,51,0.95)] text-center font-[Gilroy]">
+            <span className="text-[16px] font-normal text-[rgba(51,51,51,0.95)] text-center font-[Archivo]">
               Backyard
             </span>
           </a>
